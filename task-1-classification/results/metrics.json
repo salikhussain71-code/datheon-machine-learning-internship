@@ -1,0 +1,22 @@
+{
+  "dataset_rows_after_cleaning": 149,
+  "train_rows": 119,
+  "test_rows": 30,
+  "best_model_by_cv": "Logistic Regression",
+  "models": {
+    "Logistic Regression": {
+      "Accuracy": 0.9333,
+      "Precision (macro)": 0.9333,
+      "Recall (macro)": 0.9333,
+      "F1 (macro)": 0.9333,
+      "CV accuracy (mean)": 0.9656
+    },
+    "Decision Tree": {
+      "Accuracy": 0.9667,
+      "Precision (macro)": 0.9697,
+      "Recall (macro)": 0.9667,
+      "F1 (macro)": 0.9666,
+      "CV accuracy (mean)": 0.9319
+    }
+  }
+}

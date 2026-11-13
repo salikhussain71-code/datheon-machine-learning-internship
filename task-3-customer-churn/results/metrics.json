@@ -1,0 +1,65 @@
+{
+  "rows_after_cleaning": 7021,
+  "train_rows": 5616,
+  "test_rows": 1405,
+  "churn_rate": 0.2645,
+  "best_model_by_cv": "XGBoost (tuned)",
+  "cv_roc_auc": {
+    "Random Forest (tuned)": 0.8485,
+    "XGBoost (tuned)": 0.85,
+    "Random Forest + SMOTE": 0.8244
+  },
+  "best_params": {
+    "random_forest": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 10,
+      "model__max_features": "sqrt",
+      "model__max_depth": 8
+    },
+    "xgboost": {
+      "model__subsample": 0.7,
+      "model__reg_lambda": 3,
+      "model__n_estimators": 350,
+      "model__min_child_weight": 3,
+      "model__max_depth": 4,
+      "model__learning_rate": 0.01,
+      "model__colsample_bytree": 0.8
+    }
+  },
+  "test_metrics": {
+    "Random Forest (tuned)": {
+      "Accuracy": 0.7601,
+      "Precision": 0.5325,
+      "Recall": 0.7715,
+      "F1": 0.6301,
+      "ROC-AUC": 0.8433
+    },
+    "XGBoost (tuned)": {
+      "Accuracy": 0.7573,
+      "Precision": 0.5279,
+      "Recall": 0.7876,
+      "F1": 0.6321,
+      "ROC-AUC": 0.8448
+    },
+    "Random Forest + SMOTE": {
+      "Accuracy": 0.7758,
+      "Precision": 0.5831,
+      "Recall": 0.5376,
+      "F1": 0.5594,
+      "ROC-AUC": 0.8154
+    }
+  },
+  "target_roc_auc_gt_0_80_met": true,
+  "top_features": {
+    "Contract_Month-to-month": 0.34599998593330383,
+    "InternetService_Fiber optic": 0.06129999831318855,
+    "TechSupport_No": 0.05350000038743019,
+    "OnlineSecurity_No": 0.04639999940991402,
+    "Contract_Two year": 0.039400000125169754,
+    "OnlineSecurity_No internet service": 0.033399999141693115,
+    "InternetService_DSL": 0.025200000032782555,
+    "tenure": 0.020800000056624413,
+    "PaymentMethod_Electronic check": 0.019899999722838402,
+    "PhoneService_No": 0.019600000232458115
+  }
+}
